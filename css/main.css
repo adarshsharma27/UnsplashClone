@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.form-control {
+    font-size: 1.2rem;
+    padding: 8px;
+    text-transform: capitalize;
+    border: 1px solid #e6e5e5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 1px rgb(0 0 0 / 10%);
+    outline: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.form-control:focus {
+    background-color: #fff;
+    border-color: transparent !important;
+    box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 10%);
+}
+
+.form-container {
+    position: relative;
+}
+
+.fa-search {
+    font-size: 15px;
+    color: #fff !important;
+    border: 1px solid rgb(97, 115, 255);
+    outline: none;
+    background-color: rgb(97, 115, 255);
+    border-color: rgb(97, 115, 255);
+    height: 95%;
+    width: 50px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.bg-dark {
+    background-color: #26293A !important;
+}
+
+.masonrygallery {
+    columns: 5;
+    column-gap: 5px;
+}
+
+.grid-image {
+    margin-bottom: 5px;
+}
+
+.grid-image img {
+    border-radius: 4px;
+}
+
+.gallaryAnalytics {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallaryAnalytics::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.download-cta {
+    font-size: 14px;
+    color: #fff !important;
+    border: 1px solid #FB5F60;
+    outline: none;
+    background-color: #FB5F60;
+    border-color: #FB5F60;
+    height: 35px;
+    width: 35px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    z-index: 2;
+}
+
+.download-cta:hover {
+    transform: translateY(0.5rem);
+}
+
+.download-cta .fa-arrow-down {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.success {
+    background-color: #28a745;
+    color: #fff;
+    border-color: #28a745;
+}
+
+.gallaryAnalytics:hover img {
+    transform: scale(1.02);
+    transition: all ease 1s;
+}
+
+@media(max-width:596px) {
+    .masonrygallery {
+        columns: 2;
+    }
+.w-50 {
+    width: 80%!important;
+}
+}
